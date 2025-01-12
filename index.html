@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -107,6 +108,24 @@
       justify-content: center;
     }
 
+    .gallery img {
+      width: 100%;
+      height: auto;
+      border-radius: 5px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .gallery-item a {
+      display: block;
+      transition: transform 0.3s;
+    }
+
+    .gallery-item a:hover {
+      transform: scale(1.05);
+    }
+
+
+
     .gallery-item {
       flex: 1 1 calc(33% - 1.5em);
       padding: 1em;
@@ -131,7 +150,9 @@
       margin: 0 auto;
     }
 
-    input, textarea, button {
+    input,
+    textarea,
+    button {
       padding: 1em;
       font-size: 1em;
       border: 1px solid #ddd;
@@ -170,6 +191,7 @@
     }
   </style>
 </head>
+
 <body>
   <header>
     <div class="logo">N.R.PURAM</div>
@@ -199,10 +221,46 @@
   <section id="gallery">
     <h2>Gallery</h2>
     <div class="gallery">
-      <div class="gallery-item">Image 1</div>
-      <div class="gallery-item">Image 2</div>
-      <div class="gallery-item">Image 3</div>
-      <div class="gallery-item">Image 4</div>
+      <div class="gallery-item">
+        <a href="1.jpg" target="_blank" download="1.jpg">
+          <img src="1.jpg" alt="Gallery Image 1">
+        </a>
+      </div>
+      <div class="gallery-item">
+        <a href="2.jpg" target="_blank" download="2.jpg">
+          <img src="2.jpg" alt="Gallery Image 2">
+        </a>
+      </div>
+      <div class="gallery-item">
+        <a href="3.jpg" target="_blank" download="3.jpg">
+          <img src="3.jpg" alt="Gallery Image 3">
+        </a>
+      </div>
+      <div class="gallery-item">
+        <a href="4.jpg" target="_blank" download="4.jpg">
+          <img src="4.jpg" alt="Gallery Image 4">
+        </a>
+      </div>
+      <div class="gallery-item">
+        <a href="5.jpg" target="_blank" download="5.jpg">
+          <img src="5.jpg" alt="Gallery Image 5">
+        </a>
+      </div>
+      <div class="gallery-item">
+        <a href="6.jpg" target="_blank" download="6.jpg">
+          <img src="6.jpg" alt="Gallery Image 6">
+        </a>
+      </div>
+      <div class="gallery-item">
+        <a href="7.jpg" target="_blank" download="7.jpg">
+          <img src="7.jpg" alt="Gallery Image 7">
+        </a>
+      </div>
+      <div class="gallery-item">
+        <a href="8.jpg" target="_blank" download="8.jpg">
+          <img src="8.jpg" alt="Gallery Image 8">
+        </a>
+      </div>
     </div>
   </section>
 
@@ -211,7 +269,7 @@
     <form id="contact-form">
       <label for="name">Name:</label>
       <input type="text" id="name" required />
-      
+
       <label for="email">Email:</label>
       <input type="email" id="email" required />
 
@@ -226,4 +284,5 @@
     <p>&copy; 2024 nrpuram.com All Rights Reserved.</p>
   </footer>
 </body>
+
 </html>
