@@ -108,23 +108,22 @@
       justify-content: center;
     }
 
-    .gallery img {
-      width: 100%;
-      height: auto;
-      border-radius: 5px;
-      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    }
-
     .gallery-item a {
-      display: block;
+      display: inline-block;
+      text-decoration: none;
       transition: transform 0.3s;
     }
 
     .gallery-item a:hover {
-      transform: scale(1.05);
+      transform: scale(1.1);
     }
 
-
+    .gallery img {
+      width: 100%;
+      height: auto;
+      border-radius: 5px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    }
 
     .gallery-item {
       flex: 1 1 calc(33% - 1.5em);
@@ -222,47 +221,48 @@
     <h2>Gallery</h2>
     <div class="gallery">
       <div class="gallery-item">
-        <a href="1.jpg" target="_blank" download="1.jpg">
+        <a href="1.jpg" target="_blank">
           <img src="1.jpg" alt="Gallery Image 1">
         </a>
       </div>
       <div class="gallery-item">
-        <a href="2.jpg" target="_blank" download="2.jpg">
+        <a href="2.jpg" target="_blank">
           <img src="2.jpg" alt="Gallery Image 2">
         </a>
       </div>
       <div class="gallery-item">
-        <a href="3.jpg" target="_blank" download="3.jpg">
+        <a href="3.jpg" target="_blank">
           <img src="3.jpg" alt="Gallery Image 3">
         </a>
       </div>
       <div class="gallery-item">
-        <a href="4.jpg" target="_blank" download="4.jpg">
+        <a href="4.jpg" target="_blank">
           <img src="4.jpg" alt="Gallery Image 4">
         </a>
       </div>
       <div class="gallery-item">
-        <a href="5.jpg" target="_blank" download="5.jpg">
+        <a href="5.jpg" target="_blank">
           <img src="5.jpg" alt="Gallery Image 5">
         </a>
       </div>
       <div class="gallery-item">
-        <a href="6.jpg" target="_blank" download="6.jpg">
+        <a href="6.jpg" target="_blank">
           <img src="6.jpg" alt="Gallery Image 6">
         </a>
       </div>
       <div class="gallery-item">
-        <a href="7.jpg" target="_blank" download="7.jpg">
+        <a href="7.jpg" target="_blank">
           <img src="7.jpg" alt="Gallery Image 7">
         </a>
       </div>
       <div class="gallery-item">
-        <a href="8.jpg" target="_blank" download="8.jpg">
+        <a href="8.jpg" target="_blank">
           <img src="8.jpg" alt="Gallery Image 8">
         </a>
       </div>
     </div>
   </section>
+
 
   <section id="contact">
     <h2>Contact Us</h2>
